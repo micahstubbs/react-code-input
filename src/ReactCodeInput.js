@@ -221,6 +221,10 @@ class ReactCodeInput extends Component {
     this.handleTouch(value);
   }
 
+  focus() {
+    this.textInput[0].focus();
+  }
+
   render() {
     const { className, style = {}, inputStyle = {}, inputStyleInvalid = {}, type, autoFocus, pattern, inputMode } = this.props,
       { disabled, input, isValid, defaultInputStyle } = this.state,
